@@ -67,9 +67,7 @@
 
 				var loader = new THREE.STLLoader();
 
-				loader.load( 'Martin.stl', function ( geometry ) {
-					$("#main_scr").css("display", "none");
-					$("#progress_bar").css("display", "block");
+				loader.load( 'Martin.stl', function ( geometry ) {			
 					geometry.computeFaceNormals();
 					geometry.computeVertexNormals();
 					geometry.center();
@@ -153,6 +151,8 @@
 
 			window.onload = function()
 			{
+				$("#main_scr").css("display", "none");
+				$("#progress_bar").css("display", "block");
 				init("Martin.stl");
 			}
 		</script>
