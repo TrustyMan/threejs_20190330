@@ -27,9 +27,7 @@
           }
           
           if (Math.ceil(progress) == 100) {
-            labelEl.text('Done');
-            $("#progress_bar").css("display", "none");
-            $("#main_scr").css("display", "block");
+            labelEl.text('Done');   
             setTimeout(function() {
               labelEl.fadeOut();
             }, 1000);
